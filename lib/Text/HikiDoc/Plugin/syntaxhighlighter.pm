@@ -1,13 +1,8 @@
-#
-# $Id: syntaxhighlighter.pm,v 1.1 2010/05/29 09:06:25 oneroad Exp $
-#
 package Text::HikiDoc::Plugin::syntaxhighlighter;
 
 use strict;
 use warnings;
 no warnings 'redefine';
-
-#our $VERSION = sprintf "%d.%03d", q$Revision: 1.1 $ =~ /(\d+)/g;
 
 *Text::HikiDoc::_parse_pre = sub {
     my $self = shift;

@@ -5,7 +5,6 @@ package Text::HikiDoc::Plugin;
 
 use strict;
 use warnings;
-our $VERSION = sprintf "%d.%03d", q$Revision: 1.3 $ =~ /(\d+)/g;
 
 sub new {
     my $class = shift;

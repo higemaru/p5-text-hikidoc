@@ -1,13 +1,8 @@
-#
-# $Id: texthighlight.pm,v 1.7 2009/02/26 15:02:43 oneroad Exp $
-#
 package Text::HikiDoc::Plugin::texthighlight;
 
 use strict;
 use warnings;
 no warnings 'redefine';
-
-our $VERSION = sprintf "%d.%03d", q$Revision: 1.7 $ =~ /(\d+)/g;
 
 use Text::Highlight;
 
