@@ -77,15 +77,15 @@ sub dummy {
 >>>
 --- output
 <pre class="vimcolor">
-<span class="synStatement">sub</span><span class="synIdentifier"> dummy </span>{
+<span class="synStatement">sub </span><span class="synIdentifier">dummy </span>{
     <span class="synIdentifier">$string</span> = <span class="synStatement">shift</span>;
 
-    <span class="synIdentifier">$string</span> =~<span class="synStatement"> /</span><span class="synIdentifier">$PLUGIN_RE</span><span class="synStatement">/</span>;
+    <span class="synIdentifier">$string</span> =~ <span class="synStatement">/</span><span class="synIdentifier">$PLUGIN_RE</span><span class="synStatement">/</span>;
     <span class="synStatement">print</span> <span class="synConstant">&quot;s:</span><span class="synIdentifier">$string</span><span class="synSpecial">\t</span><span class="synConstant">m:</span><span class="synIdentifier">$1</span><span class="synSpecial">\t</span><span class="synConstant">a:</span><span class="synIdentifier">$2</span><span class="synSpecial">\n</span><span class="synConstant">&quot;</span>;
     <span class="synIdentifier">$a</span> = <span class="synIdentifier">$2</span>;
     <span class="synIdentifier">$a</span> =~ <span class="synStatement">s/</span><span class="synConstant">^</span><span class="synSpecial">\s*(.*)\s*</span><span class="synConstant">$</span><span class="synStatement">/</span><span class="synIdentifier">$1</span><span class="synStatement">/</span>;
 
-    <span class="synStatement">if</span> ( <span class="synIdentifier">$a</span> =~<span class="synStatement"> /</span><span class="synSpecial">(</span><span class="synIdentifier">$PLUGIN_RE</span><span class="synSpecial">)</span><span class="synStatement">/</span> ) {
+    <span class="synStatement">if</span> ( <span class="synIdentifier">$a</span> =~ <span class="synStatement">/</span><span class="synSpecial">(</span><span class="synIdentifier">$PLUGIN_RE</span><span class="synSpecial">)</span><span class="synStatement">/</span> ) {
         <span class="synIdentifier">&amp;hoge</span>(<span class="synIdentifier">$a</span>);
     }
     <span class="synStatement">return</span> <span class="synIdentifier">$string</span>;
@@ -113,15 +113,15 @@ sub dummy {
 >>>
 --- output
 <pre class="vimcolor">
-<span class="synStatement">sub</span><span class="synIdentifier"> dummy </span>{
+<span class="synStatement">sub </span><span class="synIdentifier">dummy </span>{
     <span class="synIdentifier">$string</span> = <span class="synStatement">shift</span>;
 
-    <span class="synIdentifier">$string</span> =~<span class="synStatement"> /</span><span class="synIdentifier">$PLUGIN_RE</span><span class="synStatement">/</span>;
+    <span class="synIdentifier">$string</span> =~ <span class="synStatement">/</span><span class="synIdentifier">$PLUGIN_RE</span><span class="synStatement">/</span>;
     <span class="synStatement">print</span> <span class="synConstant">&quot;s:</span><span class="synIdentifier">$string</span><span class="synSpecial">\t</span><span class="synConstant">m:</span><span class="synIdentifier">$1</span><span class="synSpecial">\t</span><span class="synConstant">a:</span><span class="synIdentifier">$2</span><span class="synSpecial">\n</span><span class="synConstant">&quot;</span>;
     <span class="synIdentifier">$a</span> = <span class="synIdentifier">$2</span>;
     <span class="synIdentifier">$a</span> =~ <span class="synStatement">s/</span><span class="synConstant">^</span><span class="synSpecial">\s*(.*)\s*</span><span class="synConstant">$</span><span class="synStatement">/</span><span class="synIdentifier">$1</span><span class="synStatement">/</span>;
 
-    <span class="synStatement">if</span> ( <span class="synIdentifier">$a</span> =~<span class="synStatement"> /</span><span class="synSpecial">(</span><span class="synIdentifier">$PLUGIN_RE</span><span class="synSpecial">)</span><span class="synStatement">/</span> ) {
+    <span class="synStatement">if</span> ( <span class="synIdentifier">$a</span> =~ <span class="synStatement">/</span><span class="synSpecial">(</span><span class="synIdentifier">$PLUGIN_RE</span><span class="synSpecial">)</span><span class="synStatement">/</span> ) {
         <span class="synIdentifier">&amp;hoge</span>(<span class="synIdentifier">$a</span>);
     }
     <span class="synStatement">return</span> <span class="synIdentifier">$string</span>;

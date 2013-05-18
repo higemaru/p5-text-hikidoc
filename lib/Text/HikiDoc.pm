@@ -8,7 +8,7 @@ use warnings;
 
 use File::Basename;
 
-our $VERSION = sprintf "%d.%03d", q$Revision: 1.19 $ =~ /(\d+)/g;
+our $VERSION = sprintf "%d.%03d", q$Revision: 1.20 $ =~ /(\d+)/g;
 
 sub _array_to_hash {
     my $self = shift;
