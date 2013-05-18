@@ -1,7 +1,11 @@
 Revision history for Perl extension Text::HikiDoc.
 
 {{$NEXT}}
-    - original version
+
+1.020 2013-05-18T08:01:12Z
+    - minillize
+    - fixed t/36_lib-Text-HikiDoc-Plugin-vimcolor.t
+    - add Text::HikiDoc::Plugin::syntaxhighlighter
 
 1.019 Fri jul 17 12:07:00 2009
     - fixed Text::HikiDoc::Plugin::texthighlight
