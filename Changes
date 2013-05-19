@@ -2,6 +2,9 @@ Revision history for Perl extension Text::HikiDoc.
 
 {{$NEXT}}
 
+1.021 2013-05-19T02:34:11Z
+    - required Test::Base for test
+
 1.020 2013-05-18T08:01:12Z
     - minillize
     - fixed t/36_lib-Text-HikiDoc-Plugin-vimcolor.t
