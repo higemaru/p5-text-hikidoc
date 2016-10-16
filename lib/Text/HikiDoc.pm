@@ -8,7 +8,7 @@ use warnings;
 
 use File::Basename;
 
-our $VERSION = '1.021';
+our $VERSION = '1.022';
 
 sub _array_to_hash {
     my $self = shift;
@@ -702,7 +702,7 @@ sub _do_plugin {
 
 #    $string =~ s/^{{(.*)}}$/$1/;
 #    return eval ref($self).'::Plugin::'.$string || $prefix.'{{'.$string.'}}'.$suffix;
-    $string =~ /{{([^\s\(\)\'\"]+)([\000-\377]*)}}/m;
+    $string =~ /\{\{([^\s\(\)\'\"]+)([\000-\377]*)\}\}/m;
     eval {
         my $method = $1;
         my $args = $2 || '';
