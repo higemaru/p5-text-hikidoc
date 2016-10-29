@@ -194,20 +194,17 @@ sub _parse_plugin {
     my $self = shift;
     my $string = shift || '';
 
-    my $PLUGIN_OPEN  = '{{';
-    my $PLUGIN_CLOSE = '}}';
-
     my $plugin = 'false';
     my $plugin_str = '';
 
 
     my $ret = '';
-    for my $str ( split(/($PLUGIN_OPEN|$PLUGIN_CLOSE)/o, $string) ) {
-        if ( $str eq $PLUGIN_OPEN ) {
+    for my $str ( split(/(\{\{|\}\})/o, $string) ) {
+        if ( $str eq '{{' ) {
             $plugin = 'true';
             $plugin_str .= $str;
         }
-        elsif ( $str eq $PLUGIN_CLOSE ) {
+        elsif ( $str eq '}}' ) {
             if ( $plugin eq 'true' ) {
                 $plugin_str .= $str;
                 (my $tmp = $plugin_str) =~ s/(['"]).*?\1//sg;
