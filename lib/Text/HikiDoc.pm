@@ -8,7 +8,7 @@ use warnings;
 
 use File::Basename;
 
-our $VERSION = '1.022';
+our $VERSION = '1.023';
 
 sub _array_to_hash {
     my $self = shift;

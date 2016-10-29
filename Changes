@@ -2,6 +2,9 @@ Revision history for Perl extension Text::HikiDoc.
 
 {{$NEXT}}
 
+1.023 2016-10-29T03:43:56Z
+    - fix unescaped brace
+
 1.022 2016-10-16T06:01:18Z
     - fix unescaped brace
 
